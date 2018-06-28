@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.cheanda.a8805"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 2
+        versionName '1.1'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            //true表示开启混淆代码
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main { //这个配置是必须的，如果你的so文件放在了libs/armeabi/下，则下面srcDir = libs即可
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+    productFlavors {
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'io.github.openfeign:feign-gson:9.4.0'
+    compile project(':PagerSlidingLibrary')
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="500dp"
+              android:layout_height="250dp"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+    <TextView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="安全性"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@android:color/black"/>
+        <RadioGroup
+            android:layout_marginTop="30dp"
+            android:id="@+id/redio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:textColor="@android:color/black"
+                android:id="@+id/open"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:textSize="25sp"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="开放"/>
+            <RadioButton
+                android:textColor="@android:color/black"
+                android:id="@+id/wep"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:textSize="25sp"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WEP"/>
+            <RadioButton
+                android:textColor="@android:color/black"
+                android:id="@+id/wpa"
+                android:layout_marginRight="100dp"
+                android:layout_marginLeft="100dp"
+                android:textSize="25sp"
+                android:button="@null"
+                android:drawableRight="@android:drawable/btn_radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="WPA/WPA2 PSK"/>
+        </RadioGroup>
+
+</LinearLayout>

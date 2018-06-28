@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f7f7"
+        android:gravity="center_vertical"
+        android:text="A"/>
+
+    <LinearLayout
+        android:layout_below="@id/catalog"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ic_band"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:src="@drawable/a001"/>
+        <TextView
+            android:layout_weight="4"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="品牌"/>
+    </LinearLayout>
+
+</RelativeLayout>

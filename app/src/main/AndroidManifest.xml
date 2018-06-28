@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.cheanda.a8805">
+
+    <!-- 位置权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- wifi权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- sd读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 断开网络从新请求链接请求 -->
+    <uses-permission android:name="android.permission.NETWORK_PROVIDER"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            
+            android:name=".activity.MainActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.StartAppActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <!-- 开机启动 -->
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.NavigationActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.DepthActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.AddActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.ClearActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.ReduceActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.EmptyOilActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.EmptyNewOilActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.DataQueryActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.ResultActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.SystemSettingActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.NewOIlCalibrationOneActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.NewOilCalibrationTwoActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.NewOilCalibrationThreeActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.NewOilCalibrationFourActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.NewOilCalibrationFiveActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.OldCalibrationFiveActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.OldCalibrationOneActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.OldCalibrationTwoActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.OldCalibrationThreeActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.OldCalibrationFourActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.EmptyOldOil1Activity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.ChangeOilActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.MaintainResultActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.ChangeResultActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.WifiInfoActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.AddWifiActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".activity.SelectIntentActivity"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+        </activity>
+        <activity
+            android:name=".activity.VINInfoActivity"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity android:name=".activity.DataActivity" android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

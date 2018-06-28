@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="746dp"
+              android:background="@mipmap/img_up_remind"
+              android:layout_height="496dp">
+    <TextView
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="70dp"
+        android:text="更新内容:"
+        android:textStyle="bold"
+        android:textColor="#404040"
+        android:textSize="30sp"
+        android:id="@+id/updata_dialog_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="180dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="550dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="@mipmap/btn_not_updata"
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"/>
+        <Button
+            android:layout_marginLeft="100dp"
+            android:background="@mipmap/btn_immediately_updata"
+            android:id="@+id/download"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

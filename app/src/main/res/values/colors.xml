@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#efb28e</color>
+    <color name="mycolor">#00000000</color>
+    <color name="color">#00000000</color>
+    <color name="lcloer">#21bfe7</color>
+    <color name="lcloer1">#3a8aed</color>
+    <color name="lcloer2">#3392fd</color>
+
+</resources>

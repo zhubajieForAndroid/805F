@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cheanda.a8805.activity.NewOilCalibrationFiveActivity">
+    <ImageView
+        android:id="@+id/new_Five_oil_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="558dp"
+        android:layout_marginLeft="679dp"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/number1"
+            android:src="@mipmap/number_red_zero"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/number2"
+            android:src="@mipmap/number_red_zero"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/number3"
+            android:src="@mipmap/number_red_zero"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/number4"
+            android:src="@mipmap/number_red_zero"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/number5"
+            android:src="@mipmap/number_red_zero"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>
